@@ -36,7 +36,10 @@ h1, h2 {
 }
 
 .oracle-nav-logo img {
-  height: 75px;
+  max-height: 75px;
+  height: auto;
+  max-width:100%;
+
 }
 
 .oracle-header {
@@ -79,7 +82,7 @@ h1, h2 {
 .oracle-hero-container {
   background-image: url("../img/Black-Background.jpg");
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .oracle-hero-left {
@@ -95,6 +98,7 @@ h1, h2 {
 
 .row-padding {
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .oracle-columns {
