@@ -1,0 +1,242 @@
+/* Globals */
+
+html, body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 18px;
+  /* height: 100%; */
+}
+
+p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  /* padding: 15px 0; */
+}
+
+h1, h2 {
+  font-family: "IM Fell DW Pica", serif;
+}
+
+:root {
+  --occult-orchid: #a100f2;
+  --slime-green: #ccff33;
+  --electric-teal: #00f5d4;
+  --lightning-lemon: #f1ff55;
+  --poison-berry: #ff00cc;
+}
+
+/* Header / Navigation */
+
+.oracle-container-header {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.oracle-nav-logo img {
+  height: 75px;
+}
+
+.oracle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oracle-nav-right ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-link {
+  color: white;
+}
+
+.oracle-nav-right li {
+  text-decoration: none;
+  color: white;
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 25px;
+}
+
+.oracle-nav-right li a:visited {
+  color: white;
+}
+
+.oracle-nav-right li a:hover {
+  color: var(--slime-green);
+}
+
+.nav-link a:hover,
+.oracle-nav-item a:hover {
+  transition: .5s;
+}
+
+/* Main / Hero */
+
+.oracle-hero-container {
+  background-image: url("../img/Black-Background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.oracle-hero-left {
+  color: white;
+  padding: 60px;
+}
+
+.oracle-hero-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-padding {
+  padding-top: 10rem;
+}
+
+.oracle-columns {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oracle-deck-cover {
+  height: 550px;
+  width: 325px;
+  background-image: url("../img/Deck-Background.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.oracle-card-facing {
+  height: 550px;
+  width: 325px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-card {
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  z-index: 3;
+}
+
+a.close-card-x {
+  color: var(--occult-orchid);
+}
+
+a.close-card-x:hover {
+  color: grey;
+}
+
+.oracle-card-inner {
+  padding: 1rem;
+}
+
+.oracle-card-symbol {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.oracle-card-title {
+  font-size: 30px;
+}
+
+.oracle-card-content {
+  font-size: 15px;
+}
+
+.hidden-random {
+  display: none;
+}
+
+
+/* Footer */
+
+.oracle-footer {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid var(--slime-green);
+}
+
+.oracle-footer p {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+/* ABOUT Main */
+
+.oracle-about {
+  background-image: url("../img/Black-Background.jpg");
+  background-size: cover;
+  /* height: 100vh; */
+  color: white;
+  padding: 100px;
+}
+
+@media only screen and (max-width: 639px) {
+  .oracle-about {
+    padding: 20px;
+  }
+}
+
+.about-column {
+  display:flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.oracle-about-text-container {
+  background-color: rgba(0, 0, 0, 0.60);
+  padding: 30px;
+}
+
+
+/* RESOURCES Main */
+
+.oracle-resources {
+  background-image: url("../img/Black-Background.jpg");
+  background-size: cover;
+  background-position: 100%;
+}
+
+.row-resources {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.resources-columns {
+  display:flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card-title {
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 30px;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+.oracle-resources-left, 
+.oracle-resources-right, 
+.oracle-resources-middle {
+  max-width:20rem;
+}

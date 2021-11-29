@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Consult the Oracle</title>
+        <meta name="description" content="Find our what your future holds. Consult the Oracle today.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/6484950279.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+
+        <!-- Header / Nav -->
+
+        <div class="oracle-container-header">
+            <header class="oracle-header w-100">
+                <nav class="oracle-nav-left">
+                    <h1 class="oracle-nav-logo">
+                    <a href="index.html"><img src="img/Consult-Oracle-Wt.png" alt="Consult the Oracle"/></a>
+                    </h1>
+                </nav>
+                <nav class="oracle-nav-right">
+                    <ul>
+                        <li class="oracle-nav-item"><a href="about.html" class="nav-link"><i class="fas fa-eye"></i></i> About</a></li>
+                        <li class="oracle-nav-item"><a href="resources.html" class="nav-link"><i class="fas fa-book-open"></i></i> Resources</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+        <!-- Main / Hero -->
+
+        <section class="oracle-hero-container">
+
+            <div class="row row-padding">
+
+                <div class="col-md-4 oracle-columns">
+                    <div class="oracle-hero-left">
+                        <div class="oracle-hero-left-intro">
+                            <h1 class="oracle-hero-consult">Consult the Oracle</h1>
+                            <p class="oracle-hero-subtext">Click the deck to draw a card and find out what your future holds.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 oracle-columns">
+
+                    <div class="oracle-hero-middle">
+
+                        <div class="oracle-hero-middle-deck">
+                        </div>
+                        <a href="#" onclick="getRndInteger()" class="oracle-hero-click-deck" id="clickDeck">
+                            <div class="oracle-deck-cover">
+                            </div>
+                        </a>
+                
+                        <div class="oracle-card-facing hidden-random" id="card1">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard1()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-sun"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Sun</h2>
+                                <p class="oracle-card-content">The Sun is arguably the most prominent feature of our natural world. As the prime source of light and heat, the Sun brings forth and sustains life, and without it, life on Earth would not exist. Therefore, it is natural that this bright star symbolizes positivity and clarity, auguring a time of optimism and renewed trust. It is possible to understand the pattern, to plan for the future, to move forward. The curses of the night are dispelled, and you are now armed with foresight, purpose, and faith in the striving human spirit, propelling you forward toward your goal.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card2">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard2()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-cloud-moon"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Moon</h2>
+                                <p class="oracle-card-content">The Moon, constantly changing from phase to phase, and varying its position in the sky, is capricious in character. Thus, it symbolizes resurrection, immortality, and the cyclical nature of things. Your meeting with the Moon is a confrontation with a transpersonal world, where individual boundaries dissolve and the sense of direction and ego are lost. Now is the time to trust your instincts. Take a chance and confront the unknown, in the pursuit of clarity and personal growth, to advance yourself into the next phase of development.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card3">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard3()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-star"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Star</h2>
+                                <p class="oracle-card-content">Stars, known to provide reliable aid in navigation, remind us that we are agents of divine will. Yet the light of a Star is only visible in juxtaposition to the darkness surrounding it. Thus, the appearance of the Star signals a time of hope arising out of a time of confusion or difficulty. You have persevered through challenging times with a renewed sense of self, ready to embrace what your future holds. Trust that the universe has a plan for you. We cannot always control our future, but it is important to allow ourselves the gift of imagining a good one.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card4">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard4()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-expand-arrows-alt"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">Crossroads</h2>
+                                <p class="oracle-card-content">In fairytales and myths, it is often at the Crossroads where mischief awaits. Effectively, the Crossroads symbolizes the intersection of two paths – and subsequently, a place where a decision must be made. Choose the right path. The Crossroads challenges you to take a standpoint, concretize a creative idea, make something manifest, and build something in the world. Then, you can progress on your journey with the certainty that you can be effective in life, because there is something higher in which you believe, and whose authority you yourself now embody.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card5">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard5()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-angle-double-up"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">Feathered Arrow</h2>
+                                <p class="oracle-card-content">The Feathered Arrow reflects the power of the person who wields it, while enabling the soul to become as light as the Feather and transcend the boundaries of gravity, time, and space. An analogy for swiftness and sureness, and traveling in the direction in which it is shot, the Feathered Arrow heralds a time for new ideas, quick-wittedness, intuition, and travel. You are discovering how to channel your inner power with a fierce dedication to bring your ideas and objectives to fruition. Success is surely yours to be had.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card6">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard6()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-gavel"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">Hammer and Chisel</h2>
+                                <p class="oracle-card-content">The Hammer, a symbol of authority, represents the powers of the intellect that drive the thoughts and the will of the individual. The Chisel, useful only when it is directed by the will of the Hammer, represents the intellect and finer discernment. Together, they signal a time of apprenticeship and learning a new skill. A new talent you have recently discovered is worthy of further advancement, or a hobby has the potential to be developed into a profession, even if you are at a time in your life where you “ought” to be firmly established.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card7">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard7()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-fan"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Lotus Flower</h2>
+                                <p class="oracle-card-content">The Lotus Flower symbolizes purity of mind, body, action, and speech. Its emergence signals a time for rising above the metaphorical “muddy water” of attachment and desire. Now is the time to actively seek answers of a philosophical kind. This may emerge as the study of a particular philosophy or system of belief, or as a deep commitment to a quest for meaning in life. The time is ripe to encounter your individual vision of the spirit, which guides you as you leave the past behind and venture out into the world yet to be explored.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card8">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard8()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fab fa-first-order"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Conch Shell</h2>
+                                <p class="oracle-card-content">The Conch Shell, as used as a sounding horn, reminds us to be open to the signs and the sounds of the universe. Its presence reveals a need to remain alert and aware. You may have a new idea, goal, or creative project emerging. It may not be in its final form, but it is full of potential, luring you out of your confines into a new creative venture. Listen carefully to this calling, and have the courage to take up the new idea with both hands, placing faith in the invisible creative power that has generated this new vision for you.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card9">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard9()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-crown"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Crown</h2>
+                                <p class="oracle-card-content">The Crown, a circle symbolizing immortality and eternity, signifies a benediction or union with the divine power above. The Crown’s pointed rays parallel those of the sun—an allusion to illumination in all senses of the word. Thus, the Crown signifies a time for you to become illuminated and take up the challenge of worldly things. You are poised to manifest creative ideas in the world. Look forward to a period of ongoing contentment and security, and a sense of having established something permanent that can leave a lasting legacy in the world.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card10">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard10()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-dungeon"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Doorway</h2>
+                                <p class="oracle-card-content">The Doorway—an ordinary object that largely goes unnoticed—is symbolic of a transition between one world and the next. Both Heaven and Hell lie beyond gates or Doorways, and the threshold of such a place is seen as the place where two worlds meet, and sometimes collide. The world of spirit enters the world of matter, and you are called to leave something behind in favor of acquiring something of even greater value. Now is the time to put your trust in the unseen workings of the unconscious, and advance yourself toward a new and better life.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card11">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard11()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-key"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Key</h2>
+                                <p class="oracle-card-content">The Key is symbolic of access to something that has been hitherto kept hidden or which is a secret. Keys are used for unlocking as well as for locking, and its emergence signals the need to unlock something waiting to be discovered. A Key need not be a physical object—a code, for example, may hold the Key to understanding a secret language or cipher. The Key is a symbol of power, and its emergence reveals you have the skills and creative abilities to unlock and make manifest your hidden potential.</p>
+                            </div>
+                        </div>
+
+                        <div class="oracle-card-facing hidden-random" id="card12">
+                            <div class="close-card"><a href="#" class="close-card-x" onclick="closeCard12()"><i class="fas fa-times-circle"></i></a></div>
+                            <div class="oracle-card-inner">
+                                <p class="oracle-card-symbol">
+                                    <i class="fas fa-infinity"></i></i>
+                                </p>
+                                <h2 class="oracle-card-title">The Spiral</h2>
+                                <p class="oracle-card-content">The Spiral, representative of the origin of the Universe, is rich in symbolic meaning. Indeed, the Spiral crops up in many places in the natural world and other phenomena, inspiring not only artists, but also mathematicians and philosophers. The appearance of the Spiral augurs a time of achievement and integration. A period of triumph at the successful conclusion of a matter, or the reaching of a goal which has been worked hard for, is at hand. Like the Spiral, your future radiates optimistically out from its center, ever expanding, full of endless possibilities.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+
+        </section>
+
+        
+        <!-- Footer -->
+
+        <footer class="oracle-footer">
+            <p class="footer-fineprint">For entertainment purposes only. <span class="copywright">&copy;</span> 2021 Consult the Oracle. All Rights Reserved.</p>
+        </footer>
+
+
+        <!-- Javascript Libraries -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+    
+    </html>
+    
